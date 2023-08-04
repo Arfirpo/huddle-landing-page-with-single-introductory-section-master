@@ -1,0 +1,141 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+$Violet: hsl(257, 40%, 49%);
+$softMagenta: hsl(300, 69%, 71%);
+$softViolet-p: #e9dcec;
+
+@mixin desktop-view {
+    @media (min-width: 80rem){
+        background-image: url(../images/bg-desktop.svg);
+    }
+}
+
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $Violet;
+    background-image: url(../images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -9.375rem;
+    font-family: 'Open Sans', sans-serif;
+    @include desktop-view; 
+}
+
+.main-container{
+    border: 1px solid black;
+    width: 37.5rem;
+    height: 79rem;
+    margin: 4.6875rem auto 0;     
+}
+
+.cover{
+    border: 1px solid black;
+    width: 100%;
+    height: 37.5rem;
+}
+
+.cover__logo{
+    width: 15rem;
+    height: 3.125rem;
+    margin-left: -1.75rem;
+    margin-bottom: 7.625rem;
+}
+.cover__mockups{
+    width: 100%;
+    height: 26.4375rem;
+}
+
+.description{
+    border: 1px solid black;
+    margin: 8.5rem auto 4.125rem;
+    width: 33.125rem;
+    text-align: center;
+    color: white;
+}
+
+.description__title{
+    font-size: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5625rem;
+}
+.description__paragraph{
+    font-size: 1.625rem;
+    letter-spacing: .05625rem;
+    color: $softViolet-p;
+    margin-bottom: 3.125rem;
+}
+.description__register-button{
+    width: 25.375rem;
+    height: 5.125rem;
+    border-radius: 3.125rem;
+    border: none;
+    font-size: 1.25rem;
+    color: rgba(137,121,183,255);
+    background-color: #fff;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    &:hover{
+        cursor: pointer;
+        background-color: $softMagenta;
+        color: #fff;
+    }
+}
+
+.footer-container{
+border: 1px solid black;
+width: 37.5rem;
+margin: 0 auto;
+text-align: center;
+color: $softViolet-p;
+font-weight: 600;
+}
+
+.footer__social-icons-container{
+    height: 3.875rem;
+    display: flex;
+    justify-content:center;
+    margin: 3.5625rem 0 3.5rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.icon{
+    width: 3.4375rem;
+    height:3.4375rem;
+    border-radius: 50%;
+    border: .0625rem solid #fff;
+    padding: .625rem;
+    fill: #fff;
+    &:hover{
+        fill: $softMagenta;
+        border-color: $softMagenta;
+            }
+}
+
+.footer__attribution__link{
+    color: $softViolet-p;
+    text-decoration: none;
+} 
+
+@media (min-widht:80rem){
+    body{
+        
+        
+        .main-container{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    
+}
+
+

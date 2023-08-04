@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(../images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -9.375rem;
+  font-family: "Open Sans", sans-serif;
+}
+body .main-container {
+  width: 37.5rem;
+  height: 79rem;
+  margin: 4.6875rem auto 0;
+}
+body .main-container .cover {
+  width: 100%;
+  height: 37.5rem;
+}
+body .main-container .cover .cover__logo {
+  width: 15rem;
+  height: 3.125rem;
+  margin-left: -1.75rem;
+  margin-bottom: 7.625rem;
+}
+body .main-container .cover .cover__mockups {
+  width: 100%;
+  height: 26.4375rem;
+}
+body .main-container .description {
+  margin: 8.5rem auto 4.125rem;
+  width: 33.125rem;
+  text-align: center;
+  color: white;
+}
+body .main-container .description .description__title {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1.5625rem;
+}
+body .main-container .description .description__paragraph {
+  font-size: 1.625rem;
+  letter-spacing: 0.05625rem;
+  color: #e9dcec;
+  margin-bottom: 3.125rem;
+  
+}
+body .main-container .description .description__register-button {
+  width: 25.375rem;
+  height: 5.125rem;
+  border-radius: 3.125rem;
+  border: none;
+  font-size: 1.25rem;
+  color: rgb(137, 121, 183);
+  background-color: #fff;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+body .main-container .description .description__register-button:hover {
+  cursor: pointer;
+  background-color: hsl(300, 69%, 71%);
+  color: #fff;
+}
+body .footer-container {
+  width: 37.5rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #e9dcec;
+  font-weight: 600;
+}
+body .footer-container .footer__social-icons-container {
+  height: 3.875rem;
+  display: flex;
+  justify-content: center;
+  margin: 3.5625rem 0 3.5rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+body .footer-container .footer__social-icons-container .icon {
+  width: 3.4375rem;
+  height: 3.4375rem;
+  border-radius: 50%;
+  border: 0.0625rem solid #fff;
+  padding: 0.625rem;
+  fill: #fff;
+}
+body .footer-container .footer__social-icons-container .icon:hover {
+  fill: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+}
+body .footer-container .footer__attribution__link {
+  color: #e9dcec;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=style.css.map */
