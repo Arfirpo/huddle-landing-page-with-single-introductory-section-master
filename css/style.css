@@ -106,7 +106,7 @@ body {
 @media (min-width: 87.5rem) {
   .description__paragraph {
     font-size: 1.25rem;
-    letter-spacing: -0.5625rem;
+    letter-spacing: -0.05625rem;
     margin-bottom: 1.25rem;
   }
 }
