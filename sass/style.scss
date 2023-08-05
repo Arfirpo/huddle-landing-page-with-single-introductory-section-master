@@ -5,12 +5,7 @@ $Violet: hsl(257, 40%, 49%);
 $softMagenta: hsl(300, 69%, 71%);
 $softViolet-p: #e9dcec;
 
-@mixin desktop-view {
-    @media (min-width: 80rem){
-        background-image: url(../images/bg-desktop.svg);
-    }
-}
-
+$desktop-design: "(min-width: 87.5rem)";
 
 *,
 *::before,
@@ -27,20 +22,30 @@ body{
     background-size: cover;
     background-position-y: -9.375rem;
     font-family: 'Open Sans', sans-serif;
-    @include desktop-view; 
+    @media #{$desktop-design}{
+        background-image: url(../images/bg-desktop.svg);
+        background-size: cover;
+    } 
 }
 
 .main-container{
-    border: 1px solid black;
     width: 37.5rem;
     height: 79rem;
-    margin: 4.6875rem auto 0;     
+    margin: 4.6875rem auto 0;
+    @media #{$desktop-design}{
+        display: flex;
+        width:1282px;
+        height: 664px;
+    }     
 }
 
 .cover{
-    border: 1px solid black;
     width: 100%;
     height: 37.5rem;
+    @media #{$desktop-design}{
+        width: 700px;
+        height: 100%;
+    }
 }
 
 .cover__logo{
@@ -48,30 +53,53 @@ body{
     height: 3.125rem;
     margin-left: -1.75rem;
     margin-bottom: 7.625rem;
+    @media #{$desktop-design}{
+        width: 12.6875rem;
+        height: 2.375rem;
+        margin-bottom: 6.625rem;
+    }
 }
 .cover__mockups{
     width: 100%;
     height: 26.4375rem;
+    @media #{$desktop-design}{
+        width: 100%;
+        height: 30.9375rem;
+    }
 }
 
 .description{
-    border: 1px solid black;
     margin: 8.5rem auto 4.125rem;
     width: 33.125rem;
     text-align: center;
     color: white;
+    @media #{$desktop-design}{
+        width: 36.375rem;
+        margin: 12.0625rem auto 0;
+        text-align: left;
+        padding: 0 20px 0 36px;
+    }
 }
 
 .description__title{
     font-size: 2.5rem;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1.5625rem;
+    @media #{$desktop-design}{
+        width: 533px;
+        margin-bottom: 1.0625rem;
+    }
 }
 .description__paragraph{
     font-size: 1.625rem;
     letter-spacing: .05625rem;
     color: $softViolet-p;
     margin-bottom: 3.125rem;
+    @media #{$desktop-design}{
+        font-size: 1.25rem;
+        letter-spacing: -.9px;
+        margin-bottom: 1.25rem;
+    }
 }
 .description__register-button{
     width: 25.375rem;
@@ -88,15 +116,23 @@ body{
         background-color: $softMagenta;
         color: #fff;
     }
+    @media #{$desktop-design}{
+        width: 12.625rem;
+        height: 3.625rem;
+        font-size: 1.0625rem;
+    }
 }
 
 .footer-container{
-border: 1px solid black;
-width: 37.5rem;
-margin: 0 auto;
-text-align: center;
-color: $softViolet-p;
-font-weight: 600;
+    width: 37.5rem;
+    margin: 0 auto;
+    text-align: center;
+    color: $softViolet-p;
+    font-weight: 600;
+    @media #{$desktop-design}{
+        width: 80.125rem;
+        height: 60px;
+    }
 }
 
 .footer__social-icons-container{
@@ -106,6 +142,14 @@ font-weight: 600;
     margin: 3.5625rem 0 3.5rem;
     align-items: center;
     gap: 1.5rem;
+    @media #{$desktop-design}{
+        height: 100%;
+        margin: 0;
+        justify-content: end;
+        margin: -18px;
+        gap: 14px;
+    }
+
 }
 
 .icon{
@@ -119,23 +163,18 @@ font-weight: 600;
         fill: $softMagenta;
         border-color: $softMagenta;
             }
+    @media #{$desktop-design}{
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 8px
+    }
 }
-
+.footer__attribution{
+    margin-top: -40px;
+}
 .footer__attribution__link{
     color: $softViolet-p;
     text-decoration: none;
 } 
-
-@media (min-widht:80rem){
-    body{
-        
-        
-        .main-container{
-            display: flex;
-            flex-direction: column;
-        }
-    }
-    
-}
 
 

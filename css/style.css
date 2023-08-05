@@ -15,44 +15,104 @@ body {
   background-position-y: -9.375rem;
   font-family: "Open Sans", sans-serif;
 }
-body .main-container {
+@media (min-width: 87.5rem) {
+  body {
+    background-image: url(../images/bg-desktop.svg);
+    background-size: cover;
+  }
+}
+
+.main-container {
   width: 37.5rem;
   height: 79rem;
   margin: 4.6875rem auto 0;
 }
-body .main-container .cover {
+@media (min-width: 87.5rem) {
+  .main-container {
+    display: flex;
+    width: 1282px;
+    height: 664px;
+  }
+}
+
+.cover {
   width: 100%;
   height: 37.5rem;
 }
-body .main-container .cover .cover__logo {
+@media (min-width: 87.5rem) {
+  .cover {
+    width: 700px;
+    height: 100%;
+  }
+}
+
+.cover__logo {
   width: 15rem;
   height: 3.125rem;
   margin-left: -1.75rem;
   margin-bottom: 7.625rem;
 }
-body .main-container .cover .cover__mockups {
+@media (min-width: 87.5rem) {
+  .cover__logo {
+    width: 12.6875rem;
+    height: 2.375rem;
+    margin-bottom: 6.625rem;
+  }
+}
+
+.cover__mockups {
   width: 100%;
   height: 26.4375rem;
 }
-body .main-container .description {
+@media (min-width: 87.5rem) {
+  .cover__mockups {
+    width: 100%;
+    height: 30.9375rem;
+  }
+}
+
+.description {
   margin: 8.5rem auto 4.125rem;
   width: 33.125rem;
   text-align: center;
   color: white;
 }
-body .main-container .description .description__title {
+@media (min-width: 87.5rem) {
+  .description {
+    width: 36.375rem;
+    margin: 12.0625rem auto 0;
+    text-align: left;
+    padding: 0 20px 0 36px;
+  }
+}
+
+.description__title {
   font-size: 2.5rem;
   font-family: "Poppins", sans-serif;
   margin-bottom: 1.5625rem;
 }
-body .main-container .description .description__paragraph {
+@media (min-width: 87.5rem) {
+  .description__title {
+    width: 533px;
+    margin-bottom: 1.0625rem;
+  }
+}
+
+.description__paragraph {
   font-size: 1.625rem;
   letter-spacing: 0.05625rem;
   color: #e9dcec;
   margin-bottom: 3.125rem;
-  
 }
-body .main-container .description .description__register-button {
+@media (min-width: 87.5rem) {
+  .description__paragraph {
+    font-size: 1.25rem;
+    letter-spacing: -0.9px;
+    margin-bottom: 1.25rem;
+  }
+}
+
+.description__register-button {
   width: 25.375rem;
   height: 5.125rem;
   border-radius: 3.125rem;
@@ -63,19 +123,34 @@ body .main-container .description .description__register-button {
   font-weight: 600;
   font-family: "Open Sans", sans-serif;
 }
-body .main-container .description .description__register-button:hover {
+.description__register-button:hover {
   cursor: pointer;
   background-color: hsl(300, 69%, 71%);
   color: #fff;
 }
-body .footer-container {
+@media (min-width: 87.5rem) {
+  .description__register-button {
+    width: 12.625rem;
+    height: 3.625rem;
+    font-size: 1.0625rem;
+  }
+}
+
+.footer-container {
   width: 37.5rem;
   margin: 0 auto;
   text-align: center;
   color: #e9dcec;
   font-weight: 600;
 }
-body .footer-container .footer__social-icons-container {
+@media (min-width: 87.5rem) {
+  .footer-container {
+    width: 80.125rem;
+    height: 60px;
+  }
+}
+
+.footer__social-icons-container {
   height: 3.875rem;
   display: flex;
   justify-content: center;
@@ -83,7 +158,17 @@ body .footer-container .footer__social-icons-container {
   align-items: center;
   gap: 1.5rem;
 }
-body .footer-container .footer__social-icons-container .icon {
+@media (min-width: 87.5rem) {
+  .footer__social-icons-container {
+    height: 100%;
+    margin: 0;
+    justify-content: end;
+    margin: -18px;
+    gap: 14px;
+  }
+}
+
+.icon {
   width: 3.4375rem;
   height: 3.4375rem;
   border-radius: 50%;
@@ -91,11 +176,23 @@ body .footer-container .footer__social-icons-container .icon {
   padding: 0.625rem;
   fill: #fff;
 }
-body .footer-container .footer__social-icons-container .icon:hover {
+.icon:hover {
   fill: hsl(300, 69%, 71%);
   border-color: hsl(300, 69%, 71%);
 }
-body .footer-container .footer__attribution__link {
+@media (min-width: 87.5rem) {
+  .icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 8px;
+  }
+}
+
+.footer__attribution {
+  margin-top: -40px;
+}
+
+.footer__attribution__link {
   color: #e9dcec;
   text-decoration: none;
 }
