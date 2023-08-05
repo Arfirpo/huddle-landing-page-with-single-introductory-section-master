@@ -18,12 +18,12 @@ body{
     background-color: $Violet;
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: -9.375rem;
+    background-size: 100%;
     font-family: 'Open Sans', sans-serif;
     @media #{$desktop-design}{
         background-image: url(../images/bg-desktop.svg);
         background-size: cover;
+        background-size: unset;
     } 
 }
 
@@ -50,7 +50,6 @@ body{
 .cover__logo{
     width: 15rem;
     height: 3.125rem;
-    margin-left: -1.75rem;
     margin-bottom: 7.625rem;
     @media #{$desktop-design}{
         width: 12.6875rem;
