@@ -30,8 +30,8 @@ body {
 @media (min-width: 87.5rem) {
   .main-container {
     display: flex;
-    width: 1282px;
-    height: 664px;
+    width: 80.125rem;
+    height: 41.5rem;
   }
 }
 
@@ -41,7 +41,7 @@ body {
 }
 @media (min-width: 87.5rem) {
   .cover {
-    width: 700px;
+    width: 43.75rem;
     height: 100%;
   }
 }
@@ -81,7 +81,7 @@ body {
     width: 36.375rem;
     margin: 12.0625rem auto 0;
     text-align: left;
-    padding: 0 20px 0 36px;
+    padding: 0 1.25rem 0 2.25rem;
   }
 }
 
@@ -92,7 +92,7 @@ body {
 }
 @media (min-width: 87.5rem) {
   .description__title {
-    width: 533px;
+    width: 33.3125rem;
     margin-bottom: 1.0625rem;
   }
 }
@@ -106,7 +106,7 @@ body {
 @media (min-width: 87.5rem) {
   .description__paragraph {
     font-size: 1.25rem;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.5625rem;
     margin-bottom: 1.25rem;
   }
 }
@@ -145,7 +145,7 @@ body {
 @media (min-width: 87.5rem) {
   .footer-container {
     width: 80.125rem;
-    height: 60px;
+    height: 3.75rem;
   }
 }
 
@@ -162,8 +162,8 @@ body {
     height: 100%;
     margin: 0;
     justify-content: end;
-    margin: -18px;
-    gap: 14px;
+    margin: -1.125rem;
+    gap: 0.875rem;
   }
 }
 
@@ -183,12 +183,12 @@ body {
   .icon {
     width: 2.5rem;
     height: 2.5rem;
-    padding: 8px;
+    padding: 0.5rem;
   }
 }
 
 .footer__attribution {
-  margin-top: -40px;
+  margin-top: -2.5rem;
 }
 
 .footer__attribution__link {
