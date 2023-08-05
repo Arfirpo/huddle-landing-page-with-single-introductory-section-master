@@ -8,6 +8,7 @@
 }
 
 body {
+  height: 100vh;
   background-color: hsl(257, 40%, 49%);
   background-image: url(../images/bg-mobile.svg);
   background-repeat: no-repeat;
@@ -19,6 +20,7 @@ body {
     background-image: url(../images/bg-desktop.svg);
     background-size: cover;
     background-size: unset;
+    overflow: hidden;
   }
 }
 
@@ -156,6 +158,7 @@ body {
   margin: 3.5625rem 0 3.5rem;
   align-items: center;
   gap: 1.5rem;
+  list-style: none;
 }
 @media (min-width: 87.5rem) {
   .footer__social-icons-container {

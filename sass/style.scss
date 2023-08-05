@@ -15,6 +15,7 @@ $desktop-design: "(min-width: 87.5rem)";
 }
 
 body{
+    height: 100vh;
     background-color: $Violet;
     background-image: url(../images/bg-mobile.svg);
     background-repeat: no-repeat;
@@ -24,6 +25,7 @@ body{
         background-image: url(../images/bg-desktop.svg);
         background-size: cover;
         background-size: unset;
+        overflow: hidden;
     } 
 }
 
@@ -140,6 +142,7 @@ body{
     margin: 3.5625rem 0 3.5rem;
     align-items: center;
     gap: 1.5rem;
+    list-style: none;
     @media #{$desktop-design}{
         height: 100%;
         margin: 0;
